@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CalculateInterest.API.Model.Interface;
+using CalculateInterest.API.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,7 +28,8 @@ namespace CalculateInterest.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddScoped<ICalculateInterest, CalculateInterestService>();
+            services.AddScoped<IRateOfInterest, RateOfInterestService>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
