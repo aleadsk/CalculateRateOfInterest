@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using CalculateInterest.API.Model.Interface;
 using CalculateInterest.API.Services;
@@ -34,6 +35,12 @@ namespace CalculateInterest.API
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CalculateInterest.API", Version = "v1" });
+            });    
+            
+            services.AddHttpsRedirection(options =>
+            {
+                options.RedirectStatusCode = (int) HttpStatusCode.TemporaryRedirect;
+                options.HttpsPort = 5001;
             });
         }
 
