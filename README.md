@@ -2,7 +2,7 @@
 
 - Aplicação em .NET 5.0.
 - Biblioteca utilizada para testes Xunit.
-- Para execução da aplicação no Visual Studio Code, basta navegar até a pasta CalculateInterest.API e rodar os comandos dotnet run;
+- Para execução da aplicação no Visual Studio Code, basta navegar até a pasta CalculateInterest.API e rodar os comandos **dotnet run**;
 - Para a IDE Visual Studio Community, basta selecionar o arquivo CalculateInterest.API ou Docker para rodar a aplicação.
 
 ## Essa aplicação tem 2 API
