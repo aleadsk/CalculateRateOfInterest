@@ -46,4 +46,4 @@ jobs:
         region: us-west-2
         version_label: ${{ github.run_id }}
         version_description: ${{ github.sha }}
-        deployment_package: ${{ github.worspace }}/out.zip
+        deployment_package: ${{ github.workspace }}/out.zip
