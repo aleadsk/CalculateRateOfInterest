@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\backend",
+    "\\backend\\src",
+    "\\backend\\src\\TestsCalculateInterest"
   ],
-  "SelectedNode": "\\CalculateInterest.API.sln",
+  "SelectedNode": "\\backend\\src\\TestsCalculateInterest\\TestsCalculateInterest.csproj",
   "PreviewInSolutionExplorer": false
 }
