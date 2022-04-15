@@ -44,5 +44,5 @@ jobs:
         application_name: CalculoDeJuros
         environment_name: Calculodejuros-env-1
         region: us-west-2
-        version_label: ${{ github.run_id }}
+        version_label: 1
         deployment_package: ${{ github.workspace }}/out.zip
