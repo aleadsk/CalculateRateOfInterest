@@ -33,7 +33,7 @@ jobs:
       
     - name: Zip Packae
       run: |
-        cd ${{ hithub.workspace }}/out
+        cd ${{ github.workspace }}/out
         zip -r ${{ github.workspace }}/out.zip *
         
     - name: Deploy to EB
