@@ -37,7 +37,7 @@ jobs:
         zip -r ${{ github.workspace }}/out.zip *
         
     - name: Deploy to EB
-      uses: einaregilsson/beanstalk-deploy@v13
+      uses: einaregilsson/beanstalk-deploy@v20
       with:
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }} 
@@ -45,5 +45,4 @@ jobs:
         environment_name: Calculodejuros-env
         region: us-west-2
         version_label: ${{ github.run_id }}
-        version_description: ${{ github.sha }}
         deployment_package: ${{ github.workspace }}/out.zip
