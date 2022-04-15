@@ -41,8 +41,8 @@ jobs:
       with:
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }} 
-        application_name: Calculo de Juros
-        environment_name: Calculodejuros-env
+        application_name: CalculoDeJuros
+        environment_name: Calculodejuros-env-1
         region: us-west-2
-        version_label: calculo de juros-source
+        version_label: ${{ github.run_id }}
         deployment_package: ${{ github.workspace }}/out.zip
