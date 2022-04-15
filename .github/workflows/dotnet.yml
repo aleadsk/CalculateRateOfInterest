@@ -44,5 +44,5 @@ jobs:
         application_name: Calculo de Juros
         environment_name: Calculodejuros-env
         region: us-west-2
-        version_label: ${{ github.run_id }}
+        version_label: calculo de juros-source
         deployment_package: ${{ github.workspace }}/out.zip
